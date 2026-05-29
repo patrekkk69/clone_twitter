@@ -1,0 +1,390 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*MARK: шапка*/
+header {
+    position: fixed;
+    width: 275px;
+    height: 100vh;
+    background-color: #ecf1f8;
+    border-right: 1px solid #eff3f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 16px 20px 20px;
+}
+
+.logo {
+    color: #006399;
+    margin-bottom: 35px;
+    font-weight: 700;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.container li {
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.container a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.post a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active {
+    color: #006399;
+}
+
+.fa {
+    padding-right: 10px;
+}
+
+.user {
+    display: flex;
+    margin-top: 10px;
+}
+
+.username {
+    margin-left: 10px;
+}
+
+.post button {
+    height: 40px;
+    width: 237px;
+    background-color: #1DA1F2;
+    border-radius: 35px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.fa-sign-out {
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+/*MARK:главная*/
+.index {
+    margin-left: 290px;
+    padding-top:20px;
+    width: 990px;
+}
+
+.subtitle {
+    cursor: pointer;
+    border-bottom: 1px solid #d2dfe2;
+}
+
+.category {
+  display: flex;
+  justify-content: space-around;
+}
+
+.happend {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 154px;
+    border-bottom: 1px solid #d2dfe2;
+}
+
+.happend button {
+    height: 40px;
+    width: 87px;
+    background-color: #1DA1F2;
+    border-radius: 35px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 50px 0 15px 800px;
+    cursor: pointer;
+}
+
+.input {
+    margin-left: 20px;
+    width: 900px;
+    height: 48px;
+    font-size: 20px;
+    border-bottom: 1px solid #d2dfe2;
+    outline: none;
+}
+
+.fa-file-image-o {
+    color: #006399;
+    margin: 15px 0 0 60px;
+    cursor: pointer;
+}
+
+.indicators {
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.description p {
+    width: 870px;
+    margin: 10px 0 15px 50px;
+}
+
+.description img {
+    width: 850px;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px 0 15px 50px;
+}
+
+.publications {
+    border-bottom: 1px solid #d2dfe2;
+}
+
+/*MARK:рекомендации+футер*/
+.right-block {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 550px;
+    height: 100vh;
+    background-color: #ecf1f8;
+    border-left: 1px solid #eff3f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 16px 20px 20px;
+}
+
+.search {
+    display: flex;
+    border-radius: 30px;
+    background-color: #dae0e7;
+    color: #aaacad;
+    width: 400px;
+    height: 43px;
+    padding: 12px 0 10px 10px;
+}
+
+.search input-search, fa-search {
+    align-items: center;
+}
+
+.input-search {
+    background-color: #dae0e7;
+    outline: none;
+}
+
+.recommendations {
+    margin-top: 30px;
+    background-color: #dae0e7;
+    border-radius: 20px;
+    width: 400px;
+    height: 250px;
+}
+
+.recommendations h2 {
+    margin: 15px 0 0 15px;
+}
+
+.more {
+    margin: 10px 0 0 15px;
+    color: #006399;
+}
+
+.button {
+    height: 40px;
+    width: 115px;
+    margin: 0 0 15px 80px;
+    background-color: #000000;
+    border-radius: 35px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.recommend-user, .recommend-user-search {
+    display: flex;
+    margin: 20px 0 0 12px;
+}
+
+.one {
+    border-top: 1px solid #b6bdbe;
+    border-bottom: 1px solid #b6bdbe;
+    padding-top: 20px;
+}
+
+/*MARK:поиск*/
+.searcher {
+    display: flex;
+    border-radius: 30px;
+    background-color: #dae0e7;
+    color: #aaacad;
+    width: 990px;
+    height: 43px;
+    padding: 12px 0 10px 10px;
+}
+
+.searcher input-searcher, fa-search {
+    align-items: center;
+}
+
+.input-searcher {
+    background-color: #dae0e7;
+    outline: none;
+}
+
+.button-search {
+    height: 40px;
+    width: 115px;
+    margin: 0 0 15px 80px;
+    background-color: #000000;
+    border-radius: 35px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-description {
+    width: 700px;
+    padding: 10px 0 20px 12px;
+}
+
+.search-description p {
+    height: 54px;
+}
+
+.recommend-user-search {
+    border-bottom: 1px solid #b6bdbe;
+}
+
+/*MARK:профиль*/
+.main-header {
+    display: flex;
+    align-items: center;
+}
+
+.main-header a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.subtitle-profile {
+    cursor: pointer;
+    border-bottom: 1px solid #d2dfe2;
+}
+
+.subtitle-profile p{
+    margin-left: 23px;
+}
+
+.cover img {
+    width: 1100px;
+    height: 250px;
+    margin-left: -15px;
+}
+
+.avatar-cover {
+    display:flex;
+    justify-content: space-between;
+}
+
+.avatar-cover img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin: -70px 0 0 10px;
+}
+
+.button-cover {
+    height: 50px;
+    width: 125px;
+    margin: 0 0 15px 80px;
+    border: 1px solid #474747;
+    border-radius: 35px;
+    background-color: #fff;
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.profile-description, .date {
+    margin: 15px 0 0 10px;
+}
+
+.date, .username p {
+    color: #474747;
+}
+
+.date, .followers {
+    display: flex;
+    margin: 15px 0 10px 10px;
+}
+
+.following, .follower {
+    font-size: 18px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.follower {
+    padding-left: 25px;
+}
+
+.name-post {
+    display: flex;
+    margin: 15px 0 15px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.answers {
+    margin-left: 50px;
+    color: #474747;
+}
+
+.active-profile {
+    width: 110px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #006399;
+}
+
+.description-profile img {
+    width: 850px;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px 0 15px 50px;
+}
